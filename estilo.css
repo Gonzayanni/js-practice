@@ -1,0 +1,82 @@
+body{
+    color: #333;
+    font-family: sans-serif;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.flex-item{
+    
+    flex-grow: 1;
+    border: 4px solid #333;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+ 
+}
+
+
+h2{
+    font-size: 24px;
+    color: #000;
+   
+}
+h4{
+color: #666;
+font-size: 18px;
+}
+
+p{
+   font-size: 18px;
+}
+p b{
+    color: #6a0;
+   font-size: 19px;
+}
+
+
+.flex-item:hover{
+    
+   
+    border:4px solid #6a0;
+    transition: .1s;
+ background-color: #eee;
+ transition: .2s ;
+}
+
+.flex-item:focus{
+    
+   
+    border:4px solid #6a0;
+    transition: .1s;
+ background-color: #eee;
+ transition: .2s ;
+}
+.llave-img{
+
+width: 300px;
+margin: 20px;
+}
+
+.enviar{
+    display: block;
+    width: 200px;
+    height:80px ;
+    border-radius: 13%;
+    color: #333;
+    background-color: #6a0;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 20px;
+    margin: left;
+}
+.enviar:hover{
+    background-color: #6f0;
+    transition: .2;
+}
