@@ -1354,7 +1354,7 @@
 // console.groupCollapsed() es lo mismo que group pero con el cambio que e grupo aparece cerrado
 
 
-// diferencia entre group y caollapsed
+// diferencia entre group y collapsed
 
 // console.groupCollapsed("cerrado")
 
@@ -1388,13 +1388,628 @@
 // como poner estilos en consola
 
 
-console.log("%cHOLA","color:red; background:black; padding:100px 100px;border-radius:60%;border:30px solid white")
+// console.log("%cHOLA","color:red; background:black; padding:100px 100px;border-radius:60%;border:30px solid white")
 
 
                                     // 30m
 
 
                                     // PROBLEMA DE COFLA 5A
+
+
+//´
+
+
+
+// forma 1 :Gonzalo
+
+// const materias ={
+//    fisica:[90,7,3,"fisica"],
+//    matematica:[80,7,4,"matematica"],
+//    quimica:[80,7,4,"quimica"],
+//    programacion:[80,10,4,"programacion"],
+//    alegebra:[60,6,3,"alegebra"],
+//    POO:[100,8,2,"POO"],
+//    ingles:[95,6.99,2,"Ingles"],
+//    bbdd:[95,10,3,"BBDD"],
+//    biologia:[90,6,3,"Biologia"]
+
+// }
+
+
+// console.groupCollapsed("ASISTENCIAS")
+// const asistencia= ()=>{
+  
+//    for(materia in materias){
+//       let asistencias =materias[materia][0];
+//       if(asistencias>= 90){
+//          console.log(`${materias[materia][3]} `)
+//          console.log("%cAsistencias en orden","color:green")
+//       }else{
+//          console.log(`${materias[materia][3]} `)
+//          console.log("%cFalta de asisitencias","color:red")
+
+//       }
+//    }
+//    console.groupEnd()
+// }
+
+
+
+// const promedio= ()=>{
+//    console.groupCollapsed("PROMEDIO")
+//    for(materia in materias){
+//       let promedios =materias[materia][1];
+//       if(promedios>= 7){
+//          console.log(`${materias[materia][3]} `)
+//          console.log("%cAprobado","color:green")
+//       }else{
+//          console.log(`${materias[materia][3]} `)
+//          console.log("%cDesprobado","color:red")
+
+//       }
+//    }
+//    console.groupEnd()
+// }
+
+// const trabajos= ()=>{
+//    console.groupCollapsed("TRABAJOS")
+//    for(materia in materias){
+//       let trabajos =materias[materia][2];
+//       if(trabajos>= 3){
+//          console.log(`${materias[materia][3]} `)
+//          console.log("%cTrabajos aprobados","color:green")
+//       }else{
+//          console.log(`${materias[materia][3]} `)
+//          console.log("%c Trabajos desprobados","color:red")
+
+//       }
+//    }
+//    console.groupEnd()
+// }
+
+// asistencia()
+// promedio()
+// trabajos()
+
+
+// forma 2 :DALTO 
+
+
+// const materias ={
+//    Fisica:[90,7,3,"fisica"],
+//    Matematica:[80,7,4,"matematica"],
+//    Quimica:[80,7,4,"quimica"],
+//    Programacion:[80,10,4,"programacion"],
+//    Alegebra:[60,6,3,"alegebra"],
+//    POO:[100,8,2,"POO"],
+//    Ingles:[95,6.99,2,"Ingles"],
+//    Bbdd:[95,10,3,"BBDD"],
+//    Biologia:[90,6,3,"Biologia"]
+// }
+
+// const aprobo =() =>{
+//    for(materia in materias){
+
+
+//       let asistencias=materias[materia][0];
+//       let promedio=materias[materia][1];
+//       let trabajos=materias[materia][2];
+
+
+      
+//       console.groupCollapsed( " %cDesempeño en A.P.T ${materias[materia][3]}","color:#fff" )
+
+
+
+
+
+//    if(asistencias >=90){
+    
+//       console.log("%c Asistencias en orden" ,"color:green")
+//    }else{
+//       console.log("%c Asistencias Desaprobadas","color:red")
+   
+//    }
+  
+   
+ 
+   
+// if(promedio >=7){
+   
+//    console.log("%c Promedio en orden" ,"color:green")
+// }else{
+//    console.log("%c Promedio Desaprobado","color:red")
+// }
+ 
+
+
+// if(trabajos >=3){
+  
+   
+//    console.log("%c Trabajos en orden" ,"color:green")
+// }else{
+//    console.log("%c Trabajos Desaprobados","color:red")
+   
+// }
+
+
+
+// }
+
+// }
+
+
+
+// console.groupEnd()
+// aprobo()
+
+
+//                            // 2:30M
+
+
+
+
+// problema de cofla 5b
+
+
+// 24horas
+
+
+//  let estudio ="102m estudiar"
+//  let trabajosPracticos ="102m trabajos"
+//  let descanso ="10m descanso" 
+//  let tareasCasa ="35m cosas de la casa"
+//  let trabajo ="240m trabajar" 
+ 
+
+
+
+//   for(i=0; i <14; i++){
+//      if(i==0){
+//         console.group("semana 1")
+
+//      }
+
+// console.group("%cdia " + (i+1),"color:red")
+//  console.log(estudio)
+//  console.log(trabajosPracticos)
+//  console.log(descanso)
+//  console.log(tareasCasa)
+//  console.log(trabajo)
+
+
+  
+
+//   if(i==6){
+//      console.groupEnd()
+//      console.groupCollapsed("semana 2")
+     
+     
+// }
+  
+// }
+// console.groupEnd()
+// console.groupEnd()
+
+
+
+// TOTAL DE HORAS DEDICADAS A PROGRAMACION EL DIA 12/12 FUERON APROX 
+
+
+//                                     +4HRS
+
+
+
+
+//             COMIENZO 
+// COMIENZO DE LA PRIMERA JORNADA DE PROGRMACION DEL DIA 13/12
+//                      12:40
+
+
+//EL DOM ES Document Object Model
+ 
+//   METODOS DE SELECCION DE ELEMENTOS
+
+// 1
+// let parrafo =document.getElementById("parrafo")
+
+
+// 2
+// let parrafo =document.getElementsByTagName("p")
+// document.write(parrafo)
+
+
+// 3 se utiliza para seleccionar el tipo de elemntos que quieras
+// let parrafo=document.querySelector(".parrafo")
+
+// document.write(parrafo)
+
+
+// 4 se utiliza para seleccionar todos los elementos que quieras
+
+// let parrafo=document.querySelectorAll(".parrafo")
+
+// document.write(parrafo)
+
+
+
+// metodos para definir,obtener y eliminar valores de unatributo.
+
+
+
+
+
+
+
+// 12:40/13:10=30m primera jornada
+
+
+
+
+// retome de la segunda jornada de programacion del dia 18:50
+
+
+
+
+// metodos para definir,obtener y eliminar valores de un atributo.
+
+
+
+// setAttribute() se utiliza para modificar el valor de algun node Element y se usa asi: setAttribute("type","color") el primer valor es el que el elemento ya tiene y el segundo es el que queremos que tenga.
+
+// setAttribute() se utiliza para obtener el valor del elemento que queremos ver, por ejemplo.
+
+// const rangoEdad=document.querySelector(".rangoEdad")
+// let valorDelatributo= rangoEdad.getAttribute("type")
+// document.write(valorDelatributo)
+
+// .removeAttribute() remueve el valor de un elemento
+
+// const rangoEdad=document.querySelector(".rangoEdad")
+// let valorDelatributo= rangoEdad.removeAttribute("type")
+// document.write(valorDelatributo)
+
+
+// atributos globales
+
+
+// contentEditable  se utilza para editar el contenido de cualquier elemento HTML,y se usa asi:        titulo.setAttribute("contentEditable","true or false") 
+
+// dir se usa para modificar la direccion del texto
+
+
+// hideen se utiliza para aparecer y desaparecer el elemento para desaparecer el hidden en JS lo hacemos usando : titulo.removeAttribute("hidden")
+
+// title es una informacion que nos va a salir cuando pasemos el mouse por arriba del elemento
+// tabIndex se utiliza para dejar que el elemento sea "tabeable " apretando la tecla "Tab" y se pone con valores  NUMERICOS
+
+
+
+
+
+
+// const titulo=document.querySelector(".titulo")
+
+
+// titulo.removeAttribute("title","ajajaj")
+
+
+
+
+
+
+
+   
+//    fin de 2da jornada total 1:10+30m+30)
+
+
+// retorno de la segunda jornada de programacion 23:44.
+
+
+// atributos de los inputs 
+
+// className
+// value es el valor que tiene el input
+// type es el tipo de input que le podemos poner
+// accept se utiliza para poner qur tipo de archivos se van a aceptar en  los input type file :input.accept=("image/png")
+// form se utiliza para los formularios cuando el boton de enviar datos lo queres dejar abajo 
+// minlength ya se sabe
+// maxlength ya sabes tmb
+// placeholder texto transparentes
+// required 
+// const input= document.querySelector(".input-normal")
+// input.required="  ";
+
+
+// atributo style para elementos es decir que podemos utilizar la mayoria de la propiedades de CSS CON ESTO
+
+// se utiliza camelCase para como esjemplo titulo.style.backgroundColor="red"
+
+// const titulo= document.querySelector(".titulo")
+// titulo.style.backgroundColor="red"
+
+
+
+
+   // fin de la jornada de progrqmacion del dia en total hrs 2:50
+
+
+
+                  // PROMEDIO DEL TOTAL DE HORAS DE TODA LA SEMANA PROGRAMANDO
+                                             // 2,72
+
+
+                                             // segunda semana de programacion
+                                                // dia 1 Hrs=5:20hrs
+                                                // dia 2 Hrs=
+                                                // dia 3 Hrs=
+                                                // dia 4 Hrs=
+                                                // dia 5 Hrs=
+                                                // dia 6 Hrs=
+                                                // dia 7 Hrs=
+
+// COMIENZO DE LAS PRIMERA JORNADA DE PROGRAMACION DEL DIA 14/12
+//                                        11:30
+
+      // classlist 
+// metodos 
+// .add() le agrega otra clase al elemento
+
+// .remove() remueve la clase que vos le digas emntre los parentesis.
+// .item() se utiliza para saber cual es la clase numero x del elemento.se utiliza cuando un elemento tiene muchas clases.
+
+// .contains() pregunta si contiene la clase... si la tiene devuelve true y sino false
+// .toggle() este metodo se utiliza para las condiciones,pj: si tiene la clase ("grande") sacala y si no la tiene agregala. Asi  funciona  toggle =palanca
+
+
+// .replace () rempalaza  la clase por otra
+
+
+
+// const titulo= document.querySelector(".titulo")
+// // titulo.classList.---("pequeño")
+// let valor=titulo.classList.replace("tituloo","asjk")
+
+
+// document.write(valor)
+
+
+
+
+//obtencion y modificadcion de elementos 
+
+
+
+// textContent muestra todo el contenido aunque  este hidden o lo que sea! lo muestra
+
+// innerHTML muesttra el contenido completo 
+// outer html muestra todo hasta la etiqueta
+
+// const titulo= document.querySelector(".titulo")
+
+// let resultado= titulo.textContent
+// document.write(resultado)
+
+
+
+
+// creacion de elementos html
+
+
+// para crear un elemento html se usa esto: const item= document.createElement("LI")
+
+
+// crear elementos dentro de elementos se usa
+
+// createtextNode()
+
+
+
+// para especificar que un elemento es hijo de otro elemento se usa
+// appendChild()
+
+// para no consumir tantos recuros se usa createDocumentFragment()
+
+
+
+
+
+
+
+// const container= document.querySelector(".container")
+
+
+
+
+// const p= document.createElement("P")
+
+// const textP= document.createTextNode("ESTE ES UN LINDO P")
+
+
+
+// p.appendChild(textP)
+
+// container.appendChild(p)
+// console.log(p)
+
+
+
+
+// obtencion y modificacion de hijos
+
+
+
+// .firstChild primero hijo
+// .lastChild ultimo hijo
+// firstElementChild para el primer elemento hijo es mejor usarlo pq asi no hay que borrar espacios
+// lo mismo con lastElementChild
+// childElementCount cuenta cuantos hijos tiene el padre
+// childNodes te muestra todos TODOS hijos del padre
+// children devuelve todos los elementos hijos, sin espacios.
+
+
+
+// const container= document.querySelector(".container")
+
+
+// const hijos =container.children
+
+
+// for(hijo of hijos){
+//    console.log(hijo)
+// }
+
+
+
+// modificacion de childs
+
+// replaceChild() se utiliza para remplazar los hijos, se usa asi container.replaceChild(h2_nuevo,h2_antiguo) el primero valor es el que queremos poner y el segundo es el que cambiamos
+
+// removeChild() se utiliza para eliminar el hijo. se usa asi   container.removeChild(h2_antiguo)
+
+// hasChildrenNodes se utiliza para saber si el padre tiene hijos y se utiliza asi   valor=container.hasChildNodes()
+
+
+// const container= document.querySelector(".container")
+
+// const parrafo =document.createElement("P")
+// const h2_nuevo =document.createElement("H2")
+
+// h2_nuevo.innerHTML=("TITULO NUEVO")
+// h2_antiguo= document.querySelector(".h2")
+
+
+//    respuesta=h2_antiguo.hasChildNodes()
+ 
+   
+   
+//    document.write(respuesta)
+
+//    if(respuesta){
+// alert("el padre tiene hijos")
+//    }else{
+//       alert("el padre no tiene hijos")
+//    }
+
+
+
+// propiedades de los parents padres
+
+// 17m 
+
+
+// parentElement se utiliza pra saber cual es el padre del child tienen pocas diferencias entre element y node parent
+// parentNode se utiliza pra saber cual es el padre del child tienen pocas diferencias entre element y node parent
+
+
+// const container= document.querySelector(".container")
+
+
+// const parrafo =document.createElement("P")
+// const h2_nuevo =document.createElement("H2")
+
+// h2_nuevo.innerHTML=("TITULO NUEVO")
+// h2_antiguo= document.querySelector(".h2")
+
+
+//    console.log(body.parentElement)
+ 
+
+
+   // propiedades de sibilings
+
+    // nextSibling se utiliza para saber cual es el hemano siguiente contando los espacios
+      // previousSibiling se utiliza para saber cual es el hermano anterior contando los espacios
+
+   // nextElementSibling se utiliza para saber cual es el hemano siguiente es forma de elemento
+   // previousElementSibiling  se utiliza para saber cual es el hermano anterior en forma de elemento
+
+
+
+   // const container= document.querySelector(".container")
+
+
+   // const parrafo =document.createElement("P")
+   
+   
+   
+   // h2_= document.querySelector(".h2")
+   // h4= document.querySelector(".h4")
+   // p= document.querySelector(".p")
+   
+   
+   //    console.log(h4.previousElementSibling)
+   //    console.log(p.nextSibling)
+   
+   
+
+
+//  nodos-metodo closest() se utiliza para saber cual el es nodo ascendente mas cercano que coincida con lo que seleccionamos.
+
+
+//                      FIN DE LA PRIMERA JORNADA DE PROGRAMACION  DEL DIA 
+//                                              
+
+
+
+//                      RETOME LA SEGUNA JORNADA DE PROGRAMACION  DEL DIA                    HORA                                 16:21
+
+
+   // Problema de cofla 6a
+
+
+
+
+   
+// finde la segunda jornada de programacion del dia total de horas 50minutos
+
+
+
+   
+   
+const contenedor= document.querySelector(".flex-container");
+
+
+   function crearLlave (nombre,modelo,precio){
+            
+
+            img = "<img class='llave-img' src='llave.png'>";
+            nombre= `<h2>Llave: <b>${nombre} </b></h2> `;
+            modelo= `<h4>Modelo:<b>${modelo} </b></h4> `;
+            precio= `<p>Precio: <b>$${precio} </b></p> `;
+            return [img, nombre,modelo,precio];
+
+   }
+
+
+
+let documentFragment=document.createDocumentFragment()
+
+   for(var i=0; i <20;i++){
+      let modeloRandom=Math.round(Math.random()*1000);
+      let precioRandom=Math.round(Math.random()*10+30);
+      let llave=crearLlave(` ${i}`,`${modeloRandom}`,`${precioRandom}` )
+      let div=document.createElement("DIV");
+      div.classList.add(`item-${i}`,'flex-item');
+      div.innerHTML=llave[0]+llave[1]+llave[2]+llave[3];
+     
+     documentFragment.appendChild(div)
+
+   }
+   contenedor.appendChild(documentFragment)
+
+   
+
+   // retomo de la tercera jornada de programacion del dia 20:47-12m
+// fin de la  tercera jornada de programacion del dia 1:39 hrs total:5:20hrs
+
+
+
+// COMIENZO DE LA PRIMERA JORNADA DE PROGRAMACION DEL DIA 15/12 8:19
+
+
+
 
 
 
